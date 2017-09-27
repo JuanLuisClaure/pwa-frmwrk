@@ -1,0 +1,19 @@
+{
+  "name": "pwa-frmwrk",
+  "description": "un framework for pwa doers",
+  "scripts": {
+    "postdeploy": "node ./www/index.js"
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
