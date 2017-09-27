@@ -3,10 +3,14 @@
   "version": "1.3",
   "description": "framework para hacer progressive web sites or web apps",
   "main": "./www/index.js",
+  "engines": {
+    "node": "7.7.4"
+  },
   "author": "JuanLuisClaure",
   "license": "MIT",
   "scripts": {
-    "start": "gulp"
+    "start": "node ./www/index.js",
+    "init": "gulp"
   },
   "babel": {
     "presets": [
