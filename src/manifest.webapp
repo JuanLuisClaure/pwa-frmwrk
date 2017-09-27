@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "Zupa",
+  "launch_path": "./index.html",
+  "description": "Zupamente facil. pide facil, disfruta mas",
+  "icons": {
+    "128": "./client/assets/img/icon-128x128.png"
+  },
+  "developer": {
+    "name": "JuanLuisClaureJuan",
+    "url": "https://github.com/JuanLuisClaure"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "es",
+  "permissions": {
+  },
+  "locales": {
+    "es": {
+      "name": "Zupa",
+      "description": "Zupamente facil. pide facil, disfruta mas"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "name": "frmwrk_pwa",
+  "version": "1.3",
+  "description": "framework para hacer progressive web sites or web apps",
+  "main": "./www/index.js",
+  "author": "JuanLuisClaure",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "now": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "devDependencies": {
+    "babel-core": "7.0.0-beta.0",
+    "babel-loader": "7.1.2",
+    "babel-preset-env": "2.0.0-beta.0",
+    "babel-register": "7.0.0-beta.0",
+    "css-loader": "latest",
+    "del": "latest",
+    "extract-text-webpack-plugin": "latest",
+    "file-loader": "latest",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-babel": "7.0.0",
+    "gulp-nodemon": "latest",
+    "gulp-riot": "latest",
+    "gulp-sass": "latest",
+    "riot": "3.7.0",
+    "riot-route": "3.1.2",
+    "style-loader": "latest",
+    "url-loader": "latest",
+    "webpack": "3.6.0",
+    "webpack-stats-plugin": "latest",
+    "webpack-stream": "latest"
+  },
+  "dependencies": {
+    "babel-polyfill": "7.0.0-beta.0",
+    "browser-sync": "2.18.13",
+    "firebase": "^4.1.3",
+    "gulp4": "^4.0.2",
+    "http2": "latest",
+    "koa": "next",
+    "koa-router": "next",
+    "koa-static": "next",
+    "node-pre-gyp": "latest",
+    "pug": "latest",
+    "socket.io": "latest",
+    "socket.io-client": "latest"
+  }
+}
