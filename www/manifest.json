@@ -1,0 +1,46 @@
+{
+  "name": "Zupa",
+  "short_name": "Zupa",
+  "icons": [
+    {
+     "src": "./client/assets/img/android-chrome-96x96.png",
+     "sizes": "96x96",
+     "type": "image/png",
+     "density": "4.0"
+    },
+    {
+     "src": "./client/assets/img/apple-touch-icon-57x57.png",
+     "sizes": "57x57",
+     "type": "image/png",
+     "density": "4.0"
+    },
+    {
+     "src": "./client/assets/img/apple-touch-icon-60x60.png",
+     "sizes": "60x60",
+     "type": "image/png",
+     "density": "4.0"
+    },
+    {
+     "src": "./client/assets/img/apple-touch-icon-72x72.png",
+     "sizes": "72x72",
+     "type": "image/png",
+     "density": "4.0"
+    },
+    {
+     "src": "./client/assets/img/apple-touch-icon-76x76.png",
+     "sizes": "76x76",
+     "type": "image/png",
+     "density": "4.0"
+    },
+    {
+     "src": "./client/assets/img/apple-touch-icon-114x114.png",
+     "sizes": "114x114",
+     "type": "image/png",
+     "density": "4.0"
+    }
+  ],
+  "start_url": "/index.html?homescreen=1",
+  "display": "standalone",
+  "background_color": "#eee",
+  "theme_color": "#eee"
+}

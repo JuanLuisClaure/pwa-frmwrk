@@ -10,7 +10,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node ./www/index.js",
-    "init": "gulp"
+    "iniciar": "gulp"
   },
   "babel": {
     "presets": [
