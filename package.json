@@ -1,13 +1,12 @@
 {
   "name": "frmwrk_pwa",
-  "version": "0.0.0",
-  "description": "framework para hacer progressive web sites or web apps",
+  "version": "1.6.0",
+  "description": "framework para hacer progressive web sites o web apps",
   "main": "./www/index.js",
   "engines": {
     "node": "7.7.4",
     "npm": "5.4.2",
     "yarn": "1.0.2"
-
   },
   "author": "JuanLuisClaure",
   "license": "MIT",

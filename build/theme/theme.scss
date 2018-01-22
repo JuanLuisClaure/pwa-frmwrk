@@ -7,31 +7,6 @@
 // --------------------------------------------------
 
 
-// $cloudbit:        #0066cb;
-// $contrast:        #1b1725;
-// $dark:            #534b62;
-// $medium:          #a499b3;
-// $light:           #d0bcd5;
-
-// $cloudbit:        #0066cb;
-// $contrast:        #53599a;
-// $dark:            #6d9dc5;
-// $medium:          #80ded9;
-// $light:           #aeecef;
-
-// $cloudbit:        #0066cb;
-// $contrast:        #d7263d;
-// $dark:            #02182b;
-// $medium:          #448fa3;
-// $light:           #68c5d8;
-
-$cloudbit:        #0077cb;
-$contrast:        #051923;
-$dark:            #003554;
-$medium:          #006494;
-$light:           #00a6fb;
-$white:           #fefefe;
-
 
 
 
@@ -55,13 +30,8 @@ $white:           #fefefe;
 };
 
 
-@include fontFace(superBold, "../assets/fonts/Montserrat-Black");
-@include fontFace(Bold, "../assets/fonts/Montserrat-Bold");
-@include fontFace(extraBold, "../assets/fonts/Montserrat-ExtraBold");
-@include fontFace(light, "../assets/fonts/Montserrat-Light");
-@include fontFace(regular, "../assets/fonts/Montserrat-Regular");
-@include fontFace(semiBold , "../assets/fonts/Montserrat-SemiBold");
-@include fontFace(ultraLight , "../assets/fonts/Montserrat-UltraLight");
+@include fontFace(blackF, "../assets/fonts/Montserrat-Black");
+
 
 
 
@@ -83,9 +53,7 @@ $white:           #fefefe;
 }
 
 
-#inicio{
-  background-color: red!important;
-}
+
 
 
 // responsive mixins
@@ -193,11 +161,7 @@ $white:           #fefefe;
 // import from componentes and pages
 // --------------------------------------------------
 
-.h1{
-  color: $cloudbit;
-  font-family:Bold;
-  font-size: 3em;
-}
+
 @import "./base";
 @import "./style";
 @import "./offline";

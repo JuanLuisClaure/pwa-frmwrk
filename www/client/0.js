@@ -1,14 +1,14 @@
 webpackJsonp([0],{
 
-/***/ 183:
+/***/ 159:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(184);
+__webpack_require__(160);
 
-__webpack_require__(185);
+__webpack_require__(161);
 
 var _dispatcher = __webpack_require__(28);
 
@@ -18,11 +18,89 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 const riot = __webpack_require__(15);
 
-riot.tag2('index', '<componente-uno></componente-uno>', 'index #idea,[data-is="index"] #idea{ background-color:blue; }', '', function (opts) {});
+riot.tag2('index', '<button type="button" name="button" onclick="{doSingle}">single</button> <button type="button" name="button" onclick="{doSplit}">split</button> <button type="button" name="button" onclick="{doTriple}">triple</button> <hr> <div class="grid-container" data-dato="{cualquieres}"> <div each="{x in cards}" class="flex_item--card" data-z="{x.id}"> <img riot-src="{x.img}" alt="{x.name}" width="100%"> <h4>{x.title}</h4> <h6>{x.parrafo}</h6> </div> </div> <hr> <button type="button" name="button" onclick="{verCodigo}">VerCodigo</button>', 'index .grid-container,[data-is="index"] .grid-container{ display: grid; grid-template-rows: auto; background-color: snow; } index .flex_item--card,[data-is="index"] .flex_item--card{ display: inline-flex; border-radius: 11px 11px 11px 11px; border: solid 2px black; flex-flow: column; word-wrap: break-word; margin: 6vh 0vw 0vw 3vw; width: 92.24%; align-items:flex-start; } index .flex_item--card[data-z="181"],[data-is="index"] .flex_item--card[data-z="181"]{ background-color:rgb(64, 61, 49)!important; } index .flex_item--card[data-z="182"],[data-is="index"] .flex_item--card[data-z="182"]{ background-color:rgb(75, 161, 119)!important; } index .grid-container[data-dato="single"],[data-is="index"] .grid-container[data-dato="single"]{ grid-template-columns:repeat(1, 100vw); } index .grid-container[data-dato="split"],[data-is="index"] .grid-container[data-dato="split"]{ grid-template-columns:repeat(2, 47vw); } index .grid-container[data-dato="triple"],[data-is="index"] .grid-container[data-dato="triple"]{ grid-template-columns:repeat(3, 30vw); }', '', function (opts) {
+  const tag = this;
+  tag.cards = [{
+    name: "Real",
+    id: "181",
+    img: "./client/assets/img/welcome_card.jpg",
+    title: "Holavida",
+    parrafo: "reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }, {
+    name: "Amistoso",
+    id: "182",
+    img: "./client/assets/img/welcome_card.jpg",
+    title: "ComoEstas?",
+    parrafo: "reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }, {
+    name: "Amable",
+    id: "182",
+    img: "./client/assets/img/welcome_card.jpg",
+    title: "SiguesPensandoEnMi?",
+    parrafo: "reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }, {
+    name: "Sincero",
+    id: "181",
+    img: "./client/assets/img/welcome_card.jpg",
+    title: "vivesMisExperiencias",
+    parrafo: "reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }, {
+    name: "Correcto",
+    id: "182",
+    img: "./client/assets/img/welcome_card.jpg",
+    title: "otanSolodejaste",
+    parrafo: "reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }, {
+    name: "Trabajador",
+    id: "182",
+    img: "./client/assets/img/welcome_card.jpg",
+    title: "AlTiempoRealiceSu",
+    parrafo: "reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }, {
+    name: "Amoroso",
+    id: "181",
+    img: "./client/assets/img/welcome_card.jpg",
+    title: "TrabajoCosechandoMiVida",
+    parrafo: "reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }];
+  tag.ele = {};
+  tag.cualquieres = "split";
+  tag.on('mount', () => {
+    console.log('empeznado');
+    tag.mostrar();
+  });
+
+  tag.doSingle = () => {
+    tag.cualquieres = "single";
+  };
+
+  tag.doSplit = () => {
+    tag.cualquieres = "split";
+  };
+
+  tag.doTriple = () => {
+    tag.cualquieres = "triple";
+  };
+
+  tag.verCodigo = () => {
+    let texto = 'componente-uno';
+
+    _dispatcher2.default.trigger('crear_modal', texto);
+  };
+
+  tag.getElement = a => {
+    return document.getElementById(a);
+  };
+
+  tag.mostrar = () => {
+    let e = tag.getElement('headline');
+    console.log(e.dataset.z);
+  };
+});
 
 /***/ }),
 
-/***/ 184:
+/***/ 160:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34,7 +112,7 @@ riot.tag2('saludo', '<div class="demo-card-wide mdl-card mdl-shadow--2dp"> <div 
 
 /***/ }),
 
-/***/ 185:
+/***/ 161:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42,7 +120,7 @@ riot.tag2('saludo', '<div class="demo-card-wide mdl-card mdl-shadow--2dp"> <div 
 
 const riot = __webpack_require__(15);
 
-riot.tag2('componente-uno', '<button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button> <button type="button" name="button">tes</button>', 'componente-uno button,[data-is="componente-uno"] button{ background-color: white; color:red; }', '', function (opts) {});
+riot.tag2('componente-uno', '<figure> <figcaption> <b> Just css waoo </b></figcaption> <pre class="prettyprint lang-css">\n\n  class Voila {public:     // Voila     static const string VOILA = ⁗Voila⁗;     // will not interfere with embedded <a href=⁗#voila2⁗>tags</a>.}\n\n</pre> </figure> <br>', 'componente-uno .algo,[data-is="componente-uno"] .algo{ background-color:red; }', '', function (opts) {});
 
 /***/ })
 

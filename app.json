@@ -1,6 +1,6 @@
 {
   "name": "pwa-frmwrk",
-  "description": "un framework for pwa doers",
+  "description": "framework for pwa doers",
   "scripts": {
     "postdeploy": "node ./www/index.js"
   },
